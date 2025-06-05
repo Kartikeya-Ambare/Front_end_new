@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Badam Satti</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e7f9fb 0%, #dbeafe 100%);
+            color: #003d33;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255,255,255,0.96);
+            border-radius: 1.5rem;
+            box-shadow:
+                0 8px 32px 0 rgba(31,38,135,0.18),
+                0 2px 8px 0 rgba(0,0,0,0.10);
+            padding: 2.5rem 2rem;
+            max-width: 520px;
+            margin: 2rem;
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px);}
+            to   { opacity: 1; transform: translateY(0);}
+        }
+        h1 {
+            color: #0073e6;
+            font-size: 2.3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 8px #b3e5fc;
+            letter-spacing: 1px;
+        }
+        .intro {
+            font-size: 1.15rem;
+            color: #00b991;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+        .rules-section {
+            background: rgba(51,139,229,0.08);
+            border-radius: 1rem;
+            box-shadow:
+                0 2px 8px 0 rgba(0, 0, 0, 0.10),
+                0 1px 3px 0 rgba(0, 0, 0, 0.07);
+            padding: 1.2rem 1rem 1.2rem 1.5rem;
+            color: #003d33;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+        .rules-section ul {
+            margin: 0.5rem 0 0 0;
+            padding-left: 1.2rem;
+        }
+        .rules-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        button {
+            background: linear-gradient(90deg, #338be5 70%, #00b991 100%);
+            color: #fff;
+            border: none;
+            border-radius: 1.5rem;
+            padding: 0.7rem 1.6rem;
+            font-size: 1.15rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+            transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.2s;
+            outline: none;
+            margin: 0;
+        }
+        button:hover, button:focus {
+            background: linear-gradient(90deg, #00b991 70%, #338be5 100%);
+            color: #003d33;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 18px rgba(0, 185, 145, 0.18);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.2rem 0.5rem;
+                max-width: 98vw;
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+            .rules-section {
+                font-size: 0.98rem;
+                padding: 0.8rem 0.5rem 0.8rem 1rem;
+            }
+            button {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Badam Satti</h1>
+        <div class="intro">
+            Badam Satti is a traditional card game played with a standard 52-card deck among 4 players. Each player receives 13 cards, and the objective is to be the first player to play all their cards by following specific sequence rules.
+        </div>
+        <div class="rules-section">
+            <strong>Rules</strong>
+            <ul>
+                <li><b>Starting the Game:</b> The game must begin with the 7 of Hearts (7H)</li>
+                <li><b>Initial Moves:</b> After 7H is played, players can play:
+                    <ul>
+                        <li>6H or 8H (consecutive to 7H)</li>
+                        <li>Any 7 of other suits (7D, 7C, 7S)</li>
+                    </ul>
+                </li>
+                <li><b>Sequence Play:</b> Cards must be played in consecutive order within each suit</li>
+                <li><b>Valid Moves:</b> A card can only be played if it's one value higher or lower than the existing range in that suit</li>
+                <li><b>Winning:</b> First player to play all their cards wins</li>
+                <li><b>Skipping:</b> If a player has no valid moves, their turn is skipped</li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button onclick="startGame()">Start the Game</button>
+            <button onclick="location.href='Games.html'">Back to Main Page</button>
+        </div>
+    </div>
+    <script>
+        function startGame() {
+            alert("Game will start in few moments!");
+        }
+    </script>
+</body>
+</html>

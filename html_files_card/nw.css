@@ -1,0 +1,348 @@
+/*body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    color: #00b991;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.Layer0-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    background: rgba(255,255,255,0.6);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+    gap: 2rem;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@media (min-width: 640px) {
+    .Layer0-0 {
+        padding: 3.5rem 3rem;
+        border-radius: 3rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+table {
+    background: #298ddc;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow:
+        0 4px 8px rgba(0,0,0,0.08),
+        0 8px 32px rgba(0,0,0,0.12);
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+    padding: 1rem;
+    min-width: 320px;
+    width: 100%;
+    max-width: 700px;
+}
+
+#Main {
+    color: #222;
+    text-align: center;
+    font-weight: 600;
+    padding: 1.2rem 0.5rem;
+    border-radius: 2rem;
+    background: rgba(255,255,255,0.7);
+    text-shadow: 0.5px 0.5px #00bfff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+p {
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid rgba(127,255,212,0.6);
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    background: rgba(0,0,0,0.13);
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+p.Main {
+    width: auto;
+    color: #00cfff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px #ff00ea;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+p.Row2 {
+    font-size: 1.1rem;
+    color: #fff;
+    background: rgba(41,141,220,0.2);
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+p.items {
+    color: #00b991;
+    font-weight: 500;
+    font-size: 1.05rem;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    text-shadow: 0.5px 0.5px #fff;
+}
+
+td {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 0.3rem;
+}
+
+form {
+    margin: 0;
+}
+
+button {
+    background: linear-gradient(90deg, #298ddc 70%, #00b991 100%);
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.7rem 1.3rem;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
+    outline: none;
+    margin: 0 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover, button:focus {
+    background: linear-gradient(90deg, #00b991 70%, #298ddc 100%);
+    color: #222;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 185, 145, 0.15);
+}
+
+@media (max-width: 500px) {
+    .Layer0-0 {
+        padding: 1rem 0.5rem;
+        border-radius: 1.5rem;
+    }
+    table {
+        font-size: 0.9rem;
+        min-width: 200px;
+        max-width: 95vw;
+    }
+    #Main, p.Main {
+        font-size: 1.2rem;
+    }
+    button {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.8rem;
+    }
+}*/
+
+body {
+    background: linear-gradient(135deg, #e7f9fb 0%, #dbeafe 100%);
+    color: #008060;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.Layer0-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    background: rgba(255,255,255,0.92); /* More opaque for visibility */
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.52);
+    gap: 2rem;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@media (min-width: 640px) {
+    .Layer0-0 {
+        padding: 3.5rem 3rem;
+        border-radius: 3rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+table {
+    background: #338be5; /* Lighter, vibrant blue */
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow:
+        0 4px 8px rgb(0, 0, 0,0.32),
+        0 8px 32px rgba(0,0,0,0.32);
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+    padding: 1rem;
+    min-width: 320px;
+    width: 100%;
+    max-width: 700px;
+}
+
+#Main {
+    color: #006080;
+    text-align: center;
+    font-weight: 600;
+    padding: 1.2rem 0.5rem;
+    border-radius: 2rem;
+    background: rgba(255,255,255,0.85);
+    text-shadow: 1px 1px 8px #b3e5fc;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+p {
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid rgba(127,255,212,0.6);
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    background: rgba(0,0,0,0.10);
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+p.Main {
+    width: auto;
+    color: #00cfff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px #ff00ea;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+p.Row2 {
+    font-size: 1.3rem;
+    color: #003d33;
+    background: rgba(255,255,255,0.7); /* Lighter background for clarity */
+    border: none;
+    margin-bottom: 0.5rem;
+    border-radius: 1.2rem;
+    /* Multi-layered shadow for depth */
+    box-shadow:
+        0 2px 8px 0 rgba(0, 0, 0, 0.12),   /* soft main shadow */
+        0 1.5px 4px 0 rgba(0, 0, 0, 0.09), /* subtle extra shadow */
+        0 0.5px 1.5px 0 rgba(0, 0, 0, 0.08); /* faint top shadow */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+p.items {
+    color: #00ffea;
+    font-weight: 500;
+    font-size: 1.05rem;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    text-shadow: 0.5px 0.5px #fff;
+}
+
+td {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 0.3rem;
+    
+    
+}
+
+form {
+    margin: 0;
+}
+
+button {
+    background: linear-gradient(90deg, #338be5 70%, #00b991 100%);
+    color: #006eff;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.7rem 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.2s;
+    outline: none;
+    margin: 0 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover, button:focus {
+    background: linear-gradient(90deg, #00b991 70%, #338be5 100%);
+    color: #003d33;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 185, 145, 0.18);
+}
+
+@media (max-width: 500px) {
+    .Layer0-0 {
+        padding: 1rem 0.5rem;
+        border-radius: 1.5rem;
+    }
+    table {
+        font-size: 0.9rem;
+        min-width: 200px;
+        max-width: 95vw;
+    }
+    #Main, p.Main {
+        font-size: 1.2rem;
+    }
+    button {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.8rem;
+    }
+}

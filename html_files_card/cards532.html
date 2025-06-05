@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to 5-3-2 Card Game</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f2f7fa 0%, #e0e7ff 100%);
+            color: #1b2a34;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255,255,255,0.97);
+            border-radius: 1.5rem;
+            box-shadow:
+                0 8px 32px 0 rgba(31,38,135,0.14),
+                0 2px 8px 0 rgba(0,0,0,0.08);
+            padding: 2.5rem 2rem;
+            max-width: 540px;
+            margin: 2rem;
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px);}
+            to   { opacity: 1; transform: translateY(0);}
+        }
+        h1 {
+            color: #0073e6;
+            font-size: 2.1rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1.3rem;
+            text-shadow: 0 2px 8px #dbeafe;
+            letter-spacing: 1px;
+        }
+        .about {
+            font-size: 1.15rem;
+            color: #00b991;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+        .rules-section {
+            background: rgba(59,130,246,0.09);
+            border-radius: 1rem;
+            box-shadow:
+                0 2px 8px 0 rgba(0, 0, 0, 0.08),
+                0 1px 3px 0 rgba(0, 0, 0, 0.06);
+            padding: 1.1rem 1rem 1.1rem 1.3rem;
+            color: #1b2a34;
+            font-size: 1.04rem;
+            margin-bottom: 1rem;
+        }
+        .rules-section strong {
+            color: #3b82f6;
+        }
+        .rules-section ul {
+            margin: 0.5rem 0 0 0;
+            padding-left: 1.2rem;
+        }
+        .rules-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        button {
+            background: linear-gradient(90deg, #3b82f6 70%, #10b981 100%);
+            color: #fff;
+            border: none;
+            border-radius: 1.5rem;
+            padding: 0.7rem 1.6rem;
+            font-size: 1.13rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+            transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.2s;
+            outline: none;
+            margin: 0;
+        }
+        button:hover, button:focus {
+            background: linear-gradient(90deg, #10b981 70%, #3b82f6 100%);
+            color: #1b2a34;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 18px rgba(16, 185, 129, 0.16);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.1rem 0.5rem;
+                max-width: 98vw;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+            .rules-section {
+                font-size: 0.98rem;
+                padding: 0.8rem 0.5rem 0.8rem 1rem;
+            }
+            button {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to 5-3-2 Card Game</h1>
+        <div class="about">
+            5-3-2 is a trick-taking card game for 3 players, played with a standard 52-card deck. Each player receives 10 cards. The game features a randomly chosen trump suit, and the objective is to win the majority of 10 rounds by playing the highest card in each trick. Trump cards beat all others, and the winner of each round leads the next.<br><br>
+            The player who first wins 5 rounds, or the most rounds after 10 tricks, is declared the winner.
+        </div>
+        <div class="rules-section">
+            <strong>Rules</strong>
+            <ul>
+                <li>3 players, 10 cards each.</li>
+                <li>Random player chooses the trump suit (♠, ♥, ♦, ♣).</li>
+                <li>Win 5 out of 10 rounds to win the game.</li>
+                <li>Each round, players play one card in order; the first card determines the lead suit.</li>
+                <li>Players must follow the lead suit if possible; otherwise, play any card.</li>
+                <li>Trump cards beat non-trump cards; highest card of the lead suit wins if no trump is played.</li>
+                <li>Round winner plays first in the next round.</li>
+                <li>If no player wins 5 rounds, the player(s) with the most rounds won after 10 rounds is/are the winner(s).</li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button onclick="startGame()">Start the Game</button>
+            <button onclick="location.href='Games.html'">Back to Main Page</button>
+        </div>
+    </div>
+    <script>
+        function startGame() {
+            alert("Game will start in few moments!");
+        }
+    </script>
+</body>
+</html>
